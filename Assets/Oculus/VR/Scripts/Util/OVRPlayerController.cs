@@ -63,7 +63,11 @@ public class OVRPlayerController : MonoBehaviour
 		"guardian rather than the center of the player/camera viewpoint. This (legacy) " +
 		"option should be left off except for edge cases that require extreme behavioral " +
 		"backwards compatibility.")]
-	public bool RotateAroundGuardianCenter = false;
+	/*MN_Changed_Start*/
+	public bool RotateAroundGuardianCenter = true;
+
+	//public bool RotateAroundGuardianCenter = false;
+	/*MN_Changed_End*/
 
 	/// <summary>
 	/// How many fixed speeds to use with linear movement? 0=linear control
@@ -128,7 +132,10 @@ public class OVRPlayerController : MonoBehaviour
 	/// When true, user input will be applied to linear movement. Set this to false whenever the player controller needs to ignore input for
 	/// linear movement.
 	/// </summary>
-	public bool EnableLinearMovement = true;
+	/*MN_Changed_Start*/
+	public bool EnableLinearMovement = false;
+	//public bool EnableLinearMovement = true;
+	/*MN_Changed_End*/
 
 	/// <summary>
 	/// When true, user input will be applied to rotation. Set this to false whenever the player controller needs to ignore input for rotation.
@@ -208,6 +215,9 @@ public class OVRPlayerController : MonoBehaviour
 
 	void Update()
 	{
+		/*MN_Changed_Start*/
+		EnableLinearMovement = false;
+		/*MN_Changed_End*/
 		if (!playerControllerEnabled)
 		{
 			if (OVRManager.OVRManagerinitialized)

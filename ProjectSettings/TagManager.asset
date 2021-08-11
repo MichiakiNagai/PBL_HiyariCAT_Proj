@@ -3,7 +3,26 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Tutorial
+  - Play
+  - Quit
+  - Next01
+  - Next02
+  - Next00
+  - Retry
+  - ReturnTitle
+  - End
+  - Capacity
+  - Target
+  - HeavyTarget
+  - Remove
+  - AbortThisStage
+  - ReturnToGame
+  - Debug_CatMode
+  - Debug_NextStage
+  - PlayAgain
+  - TourHere
   layers:
   - Default
   - TransparentFX
@@ -13,7 +32,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - TeleportPoint
   - 
   - 
   - 
